@@ -1,0 +1,45 @@
+:root {
+  --primary: #1A76D2;
+}
+
+.App {
+  text-align: center;
+}
+
+.nav-btn li {
+  margin: 0 0.5rem 0 0.5rem;
+}
+
+.nav-btn a {
+  padding-right: 1rem;
+  text-decoration: none;
+  color: #757575;
+  font-size: medium;
+  position: relative;
+  transition: all ease-in-out 250ms;
+}
+
+.nav-btn a::after {
+  content:'';
+  position: absolute;
+  display: block;
+  height: 0.2em;
+  width: 0%;
+  background-color: var(--primary);
+  transition: all ease-in-out 250ms;
+}
+
+.nav-btn a:hover::after {
+  width: 100%;
+}
+
+.nav-btn a:hover {
+  color: var(--primary);
+  transition: all ease-in-out 250ms;
+}
+
+.nav-btn ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
